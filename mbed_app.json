@@ -1,0 +1,13 @@
+{
+    "target_overrides": {
+        "*": {
+            "target.c_lib": "std",
+            "target.printf_lib": "std",
+            "target.components_add": ["SD"],
+            "target.components_add": ["I2C"]
+        },
+        "MCU_STM32H7A3xIQ":{
+            "target.i2c_timing_value_algo": "true"
+        }
+    }
+}
